@@ -4,21 +4,70 @@
 }
  
 .container { 
-    max-width: 100%;
-    margin: auto;
+    max-width: 1300px;
+    margin: 0 auto;   /* centers the content */
     padding: 10px;
 }
 
+/* Sections */
+section {
+  margin-top: 5rem;
+  margin-bottom: 5rem; /* space between big blocks */
+}
+
+header {
+  padding: 1rem 2rem; /* space around header */
+}
+
+h1, h2, h3, p, li, nav a  {
+    margin-bottom: 1rem;
+    font-family: "Inter Tight", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 400;
+    color: #181818
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end; /* pushes links to the right */
+  gap: 2rem; /* spacing between links */
+}
+
+nav a {
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: #8FBC8B; 
+}
+
 h1 {
-    margin-bottom: 3rem;
+   font-weight: 600;
+   font-size: 2rem;
 }
 
 h2 {
-    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    font-weight: 500;
 }
 
 h3 {
-    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+li {
+    margin-bottom: 0;
+    font-size: 0.8rem;
+}
+
+p {
+    font-size: 0.8rem;
+}
+
+.introduction {
+    background-color: #8FBC8B;
 }
 
 /* feature work*/
@@ -41,12 +90,11 @@ h3 {
     object-fit: cover;
 }
 
-
 /*about me page */ 
 /* Image + text side by side */
 .about-me {
   display: flex;
-  gap: 40px;
+  gap: 1.5rem;
   align-items: flex-start;   /* keep text aligned with top of image */
 }
 
@@ -61,6 +109,11 @@ ul {
   list-style: disc;
   margin-left: 20px; /* indent */
   padding-left: 20px;
+  margin-bottom: 1rem;
+}
+
+.about-me-content p {
+    font-size: 1rem;
 }
 
 /*make things responsive */
