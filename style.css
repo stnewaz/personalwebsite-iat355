@@ -66,8 +66,33 @@ p {
     font-size: 0.8rem;
 }
 
-.introduction {
-    background-color: #8FBC8B;
+/* Make footer stick to bottom */
+.music-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #222;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  box-shadow: 0 -2px 5px rgba(0,0,0,0.3);
+}
+
+.music-footer button {
+  background: #444;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.music-footer button:hover {
+  background: #666;
 }
 
 /* feature work*/
@@ -115,6 +140,30 @@ ul {
 .about-me-content p {
     font-size: 1rem;
 }
+
+/* Spotify Player */
+.spotify-player {
+    margin: 20px 0;
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.spotify-player iframe {
+    width: 100%;  
+    height: 80px;
+}
+.socials p {
+  margin-bottom: 0.5rem;
+}
+
+/* visualizations */
+.svg-container {
+      margin: 20px;
+      border: 1px solid #ccc;
+      padding: 10px;
+      width: fit-content;
+    }
 
 /*make things responsive */
 
