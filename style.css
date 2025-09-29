@@ -19,7 +19,7 @@ header {
   padding: 1rem 2rem; /* space around header */
 }
 
-h1, h2, h3, p, li, a  {
+h1, h2, h3, p, li, a, .svg-container text  {
     margin-bottom: 1rem;
     font-family: "Inter Tight", sans-serif;
     font-optical-sizing: auto;
@@ -62,7 +62,7 @@ li {
     font-size: 0.8rem;
 }
 
-p, .about-me-details a {
+p, .about-me-details a, .svg-container text {
     font-size: 0.8rem;
 }
 
@@ -139,6 +139,12 @@ iframe {
   border: 1px solid #ccc;
   padding: 10px;
   width: fit-content;
+}
+
+.svg-container svg {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 /*make things responsive */

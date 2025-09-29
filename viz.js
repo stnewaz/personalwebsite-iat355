@@ -13,36 +13,48 @@ function createVisualization(containerId){
   svg.setAttribute("width", width + 50); // give a margin
   svg.setAttribute("height", height);
 
-  data.forEach((value, i) => {
+   // random hex color 
+  function getRandomColor() {
+    return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+  }
+
+    // empty array list
+    const bars = []; 
+
+    data.forEach((value, i) => {
     const y = i * (barWidth + gap); // spacing out the bars evenly
 
     // --- Bar ---
     const bar = document.createElementNS("http://www.w3.org/2000/svg", "rect");
-    bar.setAttribute("x", 50);
+    bar.setAttribute("x", 90); // offsetting it so that the labels fit
     bar.setAttribute("y", y); 
     bar.setAttribute("width", value);
     bar.setAttribute("height", barWidth);
     bar.setAttribute("fill", "teal");
+    bars.push(bar); // adding bar values to bars 
     svg.appendChild(bar);
 
-    // --- Category Label (left side) ---
+    // adding category names to each bar
     const catLabel = document.createElementNS("http://www.w3.org/2000/svg", "text");
-    catLabel.setAttribute("x", 40); // slightly left of bar start
-    catLabel.setAttribute("y", y + barWidth / 2 + 4); // vertically centered
+    catLabel.setAttribute("x", 70); // offset so the labels fit
+    catLabel.setAttribute("y", y + barWidth / 2 + 4); // center
     catLabel.setAttribute("text-anchor", "end"); // align text to the right
-    catLabel.setAttribute("font-size", "12");
     catLabel.textContent = categories[i];
     svg.appendChild(catLabel);
 
-    // --- Value Label (at end of bar) ---
+    // adding the value of the bars in hours
     const valueLabel = document.createElementNS("http://www.w3.org/2000/svg", "text");
-    valueLabel.setAttribute("x", value + 60); // just after bar end
+    valueLabel.setAttribute("x", value + 100); // just after bar end
     valueLabel.setAttribute("y", y + barWidth / 2 + 4);
-    valueLabel.setAttribute("font-size", "12");
-    valueLabel.setAttribute("fill", "black");
-    valueLabel.textContent = value/100 + " hours";
+    valueLabel.textContent = value/100 + " hours"; // convert to hours 
     svg.appendChild(valueLabel);
   });
+
+  
+    svg.addEventListener("click", () => {
+        const newColor = getRandomColor(); // generate once
+        bars.forEach(bar => bar.setAttribute("fill", newColor));
+    });
 
   document.getElementById(containerId).appendChild(svg);
 }
