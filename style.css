@@ -118,20 +118,6 @@ ul {
     font-size: 1rem;
 }
 
-/* Spotify Player */
-.spotify-player {
-    margin: 20px 0;
-    display: flex;
-    align-items: flex-start;
-    width: 100%;
-}
-
-/* size of the framer*/
-iframe {
-  width: 100%;  
-  height: 80px;
-}
-
 /* visualizations */
 .svg-container {
   margin-top: 20px;

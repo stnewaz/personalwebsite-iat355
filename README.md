@@ -1,10 +1,9 @@
 # personalwebsite-iat355
 Home:
-
-- includes a brief introduction and gallery of projects i have worked on before
+This page includes a short introduction of Samaila and below is a gallary of different projects Samaila has worked on. 
 
 Visualizations: 
-- 1 visualization and one creative one
+Within this page, Samaila has created two JS visualizations. One includes a bar chart of how many hours she has spent on Tiktok throughout the week. On click the colors of the chart changes. Following, is a creative svg art of Bangladesh flag, which was where she was born. 
 
 About me:
-- contact infomation, longer introduction, previous classes and experience 
+Inside the about me page, you can get a longer introduction of who Samaila is, including a few of her many interest, classes she has taken in the past, work experience, and her contact information. The contact information can be clicked and redirect you to send her email, open her design IG and Linkdin. 
