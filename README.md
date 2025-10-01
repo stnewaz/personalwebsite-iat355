@@ -1,4 +1,10 @@
 # personalwebsite-iat355
+Purpose of the website:
+The purpose of this website is to create a professional online presence that highlights my skills, education, experience and interest like a portfolio. It is meant to showcase my growth in front-end web development using Github, and practicing HTML, JS, and CSS. 
+
+Technology used:
+The website mainly uses HTML, CSS for styling, and JS to create SVG visualizations. 
+
 Home:
 This page includes a short introduction of Samaila and below is a gallary of different projects Samaila has worked on. 
 
