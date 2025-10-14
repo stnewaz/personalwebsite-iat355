@@ -124,7 +124,9 @@ ul {
   margin-bottom: 50px;
   border: 1px solid #ccc;
   padding: 10px;
-  width: fit-content;
+  width: 100%;       /* Fill the parent width */
+  max-width: 1200px; /* Optional: max width */
+  height: auto;      /* Height adjusts dynamically */
 }
 
 .svg-container svg {
@@ -132,6 +134,7 @@ ul {
   height: auto;
   display: block;
 }
+
 
 /*make things responsive */
 
