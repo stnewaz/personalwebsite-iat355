@@ -8,7 +8,9 @@
      <link rel="preconnect" href="https://fonts.googleapis.com">
      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
      <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
+     <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@7"></script>
 </head>
 <body>
     <header>
@@ -31,9 +33,17 @@
      <!-- Another visualization/art container -->
      <div id="creativeArt" class="svg-container"></div>
 
+    <div id="vis" class="svg-container"></div>
+    <div id="lineChart" class="svg-container"></div>
+    <div id="heatmap" class="svg-container"></div>
+    <div id="nintendoLineChart" class="svg-container"></div>
      <!-- Load JS file -->
-     <script src="viz.js"></script>
 
+    
+    <!-- Your custom visualization JS -->
+    <script src="viz.js"></script>
+    <script src="vegalite.js"></script>
     </section>
+
 </body>
 </html>
