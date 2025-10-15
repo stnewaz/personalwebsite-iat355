@@ -127,8 +127,8 @@ function createLineChart(containerId) {
     "height": 500,
     "autosize": { "type": "fit", "contains": "padding" },
     "title": {
-      "text": "Global Sales Trends Over Time by Genre and Platform",
-      "subtitle": "Click a category in the legend or a line to highlight it. Double-click to reset. Hover on categories to get the total global sales."
+      "text": "Sales Over Time by Platform and Genre",
+      "subtitle": "Click a category in the legend or a line to highlight it. Double-click to reset. Hover on categories to get the total global sales. Press the drop-down to filter by genre or platform."
     }
   };
 
