@@ -54,15 +54,18 @@ h2 {
 }
 
 h3 {
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 
 li {
     margin-bottom: 0;
-    font-size: 0.8rem;
 }
 
-p, .about-me-details a, .svg-container text {
+p, .about-me-details a, li {
+    font-size: 1rem;
+}
+
+.svg-container text {
     font-size: 0.8rem;
 }
 
