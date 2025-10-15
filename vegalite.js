@@ -173,6 +173,7 @@ function createHeatmap(containerId) {
     ],
     "width": 950,
     "height": 300,
+    "autosize": { "type": "fit", "contains": "padding" },
     "title": {
       "text": "Regional sales by Platform",
       "subtitle": "Sum of sales (millions) per platform-region combination"
