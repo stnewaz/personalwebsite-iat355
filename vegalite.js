@@ -46,9 +46,9 @@ function createBarChart(containerId) {
         { "aggregate": "sum", "field": "global_sales", "title": "Total Sales (millions)" }
       ]
     },
-    "width": "container",
-    "height": 500,
-    "autosize": { "type": "fit", "contains": "padding" },
+    "width": 2000,
+    "height": 700,
+    "autosize": { "type": "fit-x", "resize": true, "contains": "padding" },
     "title": {
       "text": "Global Sales by Platform and Genre",
       "subtitle": "Click a genre in the legend or on the bar chart to highlight it. Double-click to reset. Hover on genres to get the total global sales for each platform and genre."
@@ -123,9 +123,9 @@ function createLineChart(containerId) {
         { "aggregate": "sum", "field": "global_sales", "title": "Sales (millions)" }
       ]
     },
-    "width": "container",
-    "height": 500,
-    "autosize": { "type": "fit", "contains": "padding" },
+    "width": 2000,
+    "height": 700,
+    "autosize": { "type": "fit-x", "resize": true, "contains": "padding" },
     "title": {
       "text": "Sales Over Time by Platform and Genre",
       "subtitle": "Click a category in the legend or a line to highlight it. Double-click to reset. Hover on categories to get the total global sales. Press the drop-down to filter by genre or platform."
@@ -163,7 +163,7 @@ function createHeatmap(containerId) {
       },
       // Text label layer
       {
-        "mark": { "type": "text", "fontSize": 10, "fontWeight": "bold" },
+        "mark": { "type": "text" },
         "encoding": {
           "y": { "field": "sales_region", "type": "nominal" },
           "x": { "field": "platform", "type": "nominal" },
@@ -171,9 +171,9 @@ function createHeatmap(containerId) {
         }
       }
     ],
-    "width": 950,
-    "height": 300,
-    "autosize": { "type": "fit", "contains": "padding" },
+    "width": 2000,
+    "height": 700,
+    "autosize": { "type": "fit-x", "resize": true, "contains": "padding" },
     "title": {
       "text": "Regional sales by Platform",
       "subtitle": "Sum of sales (millions) per platform-region combination"
@@ -228,9 +228,9 @@ function createNintendoLineChart(containerId) {
         { "aggregate": "sum", "field": "global_sales", "title": "Sales (millions)" }
       ]
     },
-    "width": 1000,
-    "height": 600,
-    "autosize": { "type": "fit", "contains": "padding" },
+    "width": 2000,
+    "height": 700,
+    "autosize": { "type": "fit-x", "resize": true, "contains": "padding" },
     "title": {
       "text": "Global sales of Nintendo Games Released by Genre (Over Time)",
       "subtitle": "Click a genre in the legend to highlight | Double-click to reset"

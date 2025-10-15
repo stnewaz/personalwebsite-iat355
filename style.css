@@ -118,21 +118,31 @@ ul {
     font-size: 1rem;
 }
 
-/* visualizations */
+/* Apply to all visualization containers */
 .svg-container {
+  
   margin-top: 20px;
   margin-bottom: 50px;
   border: 1px solid #ccc;
   padding: 10px;
-  width: 100%;       /* Fill the parent width */
-  max-width: 1200px; /* Optional: max width */
-  height: auto;      /* Height adjusts dynamically */
+  width: 100%;
+  max-width: 1300px;    
+  height: auto;         
+  box-sizing: border-box;
+  line-height: 0;
 }
 
+/* make the vegalite responsive */
+.svg-container > div {
+  height: auto !important; 
+}
+
+/* svg responsiveness */
 .svg-container svg {
   width: 100%;
   height: auto;
   display: block;
+  aspect-ratio: 3 / 1;
 }
 
 

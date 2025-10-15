@@ -107,5 +107,7 @@ function createCreativeArt(containerId) {
 
   document.getElementById(containerId).appendChild(svg);
 }
+
+// call functions 
 createVisualization("creativeVisualization");
 createCreativeArt("creativeArt");
