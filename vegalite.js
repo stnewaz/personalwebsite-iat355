@@ -421,7 +421,7 @@ function createNintendoLineChart(containerId) {
       "subtitleFontWeight": "normal",
       "subtitleColor": "#666",
       "color": "#333",
-      "titlePadding": 10,
+      "titlePadding": 10
     }
   };
 
