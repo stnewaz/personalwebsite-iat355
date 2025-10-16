@@ -408,7 +408,7 @@ function createNintendoLineChart(containerId) {
         { "aggregate": "sum", "field": "global_sales", "title": "Sales (millions)" }
       ]
     },
-    "width": 3400,
+    "width": "contain",
     "height": 1200,
     "autosize": { "type": "fit-x", "resize": true, "contains": "padding" },
     "title": {
