@@ -362,7 +362,8 @@ function createNintendoLineChart(containerId) {
           "titlePadding": 30,    
           "labelFont": "Courier Prime",
           "labelFontSize": 28,
-          "labelColor": "#555",        }
+          "labelColor": "#555"        
+        }
       },
       "y": {
         "aggregate": "sum",
@@ -420,8 +421,7 @@ function createNintendoLineChart(containerId) {
       "subtitleFontSize": 32,   
       "subtitleFontWeight": "normal",
       "subtitleColor": "#666",
-      "color": "#333",
-      "titlePadding": 10
+      "color": "#333"
     }
   };
 
