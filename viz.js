@@ -27,7 +27,7 @@ function createVisualization(containerId){
     // --- Bar ---
     const bar = document.createElementNS("http://www.w3.org/2000/svg", "rect");
     bar.setAttribute("x", 90); // offsetting it so that the labels fit
-    bar.setAttribute("y", y); 
+    bar.setAttribute("y", y+10); 
     bar.setAttribute("width", value);
     bar.setAttribute("height", barWidth);
     bar.setAttribute("fill", "teal");
@@ -73,7 +73,7 @@ function createCreativeArt(containerId) {
   // creating the red dot
   const circle = document.createElementNS("http://www.w3.org/2000/svg", "circle");
   const cx = width/2;
-  const cy = height/2;
+  const cy = height/4;
   const r = 25;
 
   circle.setAttribute("cx", cx-5);

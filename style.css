@@ -122,10 +122,10 @@ ul {
 }
 
 /* Apply to all visualization containers */
-.svg-container {
+.svg-container, .vega-container {
   
   margin-top: 20px;
-  margin-bottom: 50px;
+  margin-bottom: 60px;
   border: 1px solid #ccc;
   padding: 10px;
   width: 100%;
@@ -136,17 +136,23 @@ ul {
 }
 
 /* make the vegalite responsive */
-.svg-container > div {
+.vega-container > div {
   height: auto !important; 
 }
 
 /* svg responsiveness */
-.svg-container svg {
+.svg-container svg, .vega-container svg {
   width: 100%;
-  height: auto;
   display: block;
   aspect-ratio: 3 / 1;
 }
+
+.vega-container svg {
+  height: auto;
+    aspect-ratio: 5 / 2;
+
+}
+
 
 
 /*make things responsive */
